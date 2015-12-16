@@ -89,7 +89,7 @@ function roomCB(room) {
 			return;
 		}
 		if ( room.msg ) {
-			lookup.room[room.id].text.value += lookup.contact[room.msg.cid].name + ': ' +  room.msg.msg + '\n';
+			lookup.room[room.id].text.value += lookup.contact[room.msg.cid].name + ': ' +  room.msg.txt + '\n';
 			lookup.room[room.id].text.scrollTop = lookup.room[room.id].text.scrollHeight;
 		}
 		if ( room.name != lookup.room[room.id].name.nodeValue )
